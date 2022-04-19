@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SportViewController: UIViewController, UITableViewDelegate {
+class SportViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     var viewModel = ApiViewModel(url: "https://newsapi.org/v2/top-headlines?country=pl&category=sport&apiKey=")
@@ -24,6 +24,22 @@ class SportViewController: UIViewController, UITableViewDelegate {
                 self.tableView.reloadData()
             }
         }
+    }
+}
+
+extension SportViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.articles.bind { article in
+            showTutorial(article[indexPath.row].url) { results in
+                switch results {
+                case .success(let vc):
+                    self.present(vc, animated: true, completion: nil)
+                case .failure(let error):
+                    print(error)
+                }
+            }
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

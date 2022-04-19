@@ -20,6 +20,7 @@
 		FB411C37280EBFF100178C1A /* ArticleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB411C36280EBFF000178C1A /* ArticleManager.swift */; };
 		FB411C41280EF98500178C1A /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB411C40280EF98500178C1A /* Box.swift */; };
 		FB411C43280EFA6D00178C1A /* ApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB411C42280EFA6D00178C1A /* ApiViewModel.swift */; };
+		FB411C45280F159A00178C1A /* WebsiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB411C44280F159A00178C1A /* WebsiteManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FB411C36280EBFF000178C1A /* ArticleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleManager.swift; sourceTree = "<group>"; };
 		FB411C40280EF98500178C1A /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		FB411C42280EFA6D00178C1A /* ApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewModel.swift; sourceTree = "<group>"; };
+		FB411C44280F159A00178C1A /* WebsiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +108,8 @@
 		FB411C35280E988F00178C1A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FB411C19280DB21A00178C1A /* SportViewController.swift */,
 				FB411C29280DB8A500178C1A /* PoliticsViewController.swift */,
+				FB411C19280DB21A00178C1A /* SportViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				FB411C40280EF98500178C1A /* Box.swift */,
+				FB411C44280F159A00178C1A /* WebsiteManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB411C37280EBFF100178C1A /* ArticleManager.swift in Sources */,
+				FB411C45280F159A00178C1A /* WebsiteManager.swift in Sources */,
 				FB411C1A280DB21A00178C1A /* SportViewController.swift in Sources */,
 				FB411C2A280DB8A500178C1A /* PoliticsViewController.swift in Sources */,
 				FB411C16280DB21A00178C1A /* AppDelegate.swift in Sources */,

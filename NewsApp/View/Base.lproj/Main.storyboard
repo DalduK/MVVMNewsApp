@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FG2-rO-YWp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--TableView1-->
+        <scene sceneID="PiM-vr-4TH">
+            <objects>
+                <viewController id="hQP-CO-gvi" customClass="PoliticsViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9bT-5k-MbT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Z5n-8J-TMa">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="LS0-qv-rpw" customClass="NewsCell" customModule="NewsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LS0-qv-rpw" id="XDh-sU-jgU">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ao5-Cc-bDV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z5n-8J-TMa" firstAttribute="trailing" secondItem="Ao5-Cc-bDV" secondAttribute="trailing" id="AHh-zo-PLA"/>
+                            <constraint firstItem="Z5n-8J-TMa" firstAttribute="top" secondItem="Ao5-Cc-bDV" secondAttribute="top" id="Ggy-Ik-5Ng"/>
+                            <constraint firstItem="Z5n-8J-TMa" firstAttribute="leading" secondItem="Ao5-Cc-bDV" secondAttribute="leading" id="OsC-xk-Ghi"/>
+                            <constraint firstItem="Ao5-Cc-bDV" firstAttribute="bottom" secondItem="Z5n-8J-TMa" secondAttribute="bottom" id="uoZ-NT-QlV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TableView1" id="yEX-Bi-91c"/>
+                    <connections>
+                        <outlet property="tableView" destination="Z5n-8J-TMa" id="SSm-Sm-u8e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUM-4S-BqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726.0869565217392" y="343.52678571428572"/>
+        </scene>
+        <!--TableView2-->
+        <scene sceneID="Tur-eB-xcj">
+            <objects>
+                <viewController title="TableView2" id="vpL-yP-lZM" customClass="SportViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t89-TN-JXO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ano-WJ-ACS">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="tpv-9l-gLt" customClass="NewsCell" customModule="NewsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tpv-9l-gLt" id="u5n-Yx-GX9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="beT-8A-VGc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ano-WJ-ACS" firstAttribute="leading" secondItem="beT-8A-VGc" secondAttribute="leading" id="6AY-jZ-Wmz"/>
+                            <constraint firstItem="Ano-WJ-ACS" firstAttribute="top" secondItem="beT-8A-VGc" secondAttribute="top" id="DKm-UM-ef1"/>
+                            <constraint firstItem="beT-8A-VGc" firstAttribute="bottom" secondItem="Ano-WJ-ACS" secondAttribute="bottom" id="WSW-T8-HLg"/>
+                            <constraint firstItem="beT-8A-VGc" firstAttribute="trailing" secondItem="Ano-WJ-ACS" secondAttribute="trailing" id="XHs-3u-oi0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="TableView2" id="jsV-z1-Akv"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ano-WJ-ACS" id="OMU-qF-Xjc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oQf-BG-1Dk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1726.0869565217392" y="-323.4375"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="EER-Ts-InA">
+            <objects>
+                <tabBarController id="FG2-rO-YWp" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0q0-Nf-jL8"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qaP-bH-qqq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5iD-4g-bHC" kind="relationship" relationship="viewControllers" id="zqQ-Wa-FCT"/>
+                        <segue destination="I3d-5i-QT1" kind="relationship" relationship="viewControllers" id="Pxx-t5-9Fj"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6eM-gN-6mc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-76" y="3"/>
+        </scene>
+        <!--Sport-->
+        <scene sceneID="GG6-8j-Uge">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I3d-5i-QT1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sport" selectedImage="sportscourt" catalog="system" id="PFq-bb-OYM">
+                        <imageReference key="image" image="sportscourt" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Hun-Bu-aSs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemTealColor"/>
+                        <navigationBarAppearance key="compactAppearance">
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance" backgroundImageContentMode="scaleAspectFill">
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactScrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vpL-yP-lZM" kind="relationship" relationship="rootViewController" id="3rA-BH-B4s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7to-HL-nbb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.94202898550736" y="-323.4375"/>
+        </scene>
+        <!--Politics-->
+        <scene sceneID="rwS-n8-aHj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5iD-4g-bHC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Politics" image="books.vertical" catalog="system" id="yRT-YI-AJs"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="cMe-Z6-44k">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="compactAppearance">
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="compactScrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemTealColor"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hQP-CO-gvi" kind="relationship" relationship="rootViewController" id="3x5-EI-t5Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R3J-Qg-ZS6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="815.94202898550736" y="343.52678571428572"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="books.vertical" catalog="system" width="128" height="107"/>
+        <image name="sportscourt" catalog="system" width="128" height="84"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

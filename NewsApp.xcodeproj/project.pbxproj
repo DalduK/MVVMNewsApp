@@ -90,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				FB411C31280DE11E00178C1A /* ArticleModel.swift */,
-				FB411C36280EBFF000178C1A /* ArticleManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +116,7 @@
 		FB411C3E280EF96000178C1A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FB411C36280EBFF000178C1A /* ArticleManager.swift */,
 				FB411C40280EF98500178C1A /* Box.swift */,
 				FB411C44280F159A00178C1A /* WebsiteManager.swift */,
 			);
